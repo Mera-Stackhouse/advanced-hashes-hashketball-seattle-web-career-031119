@@ -123,7 +123,7 @@ def num_points_scored(name)
     game_hash[:home][:players][name][:points]
   else
     game_hash[:away][:players][name][:points]
-  
+  end
 end
 
 
