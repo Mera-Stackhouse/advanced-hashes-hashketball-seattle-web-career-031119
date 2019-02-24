@@ -174,6 +174,7 @@ def big_shoe_rebounds
     sizes[stats[:rebounds]] = stats[:shoe]
   }
   puts sizes
+  puts "hi"
 end
   
 
