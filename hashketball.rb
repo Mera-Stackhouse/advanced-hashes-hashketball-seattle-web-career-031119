@@ -176,7 +176,7 @@ def big_shoe_rebounds
   game_hash[:away][:players].each {|name, stats|
     sizes << stats[:shoe]
   }
-  puts sizes
+  largest = sizes.max
 end
 
 big_shoe_rebounds
