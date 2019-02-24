@@ -176,13 +176,11 @@ def big_shoe_rebounds
   game_hash[:away][:players].each {|name, stats|
     sizes[name] = stats[:shoe]
   }
-  puts sizes
   largest = sizes.key(sizes.values.max)
-  puts largest
-  game_hash[:home][:players][largest][:rebounds]
+  puts game_hash[:home][:players][largest][:rebounds]
 end
 
-big_shoe_rebounds
-  
 
+  
+big_shoe_rebounds
 
