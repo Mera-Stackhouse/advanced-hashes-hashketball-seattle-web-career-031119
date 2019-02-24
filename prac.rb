@@ -143,3 +143,6 @@ sizes[game_hash[:home][:players]["Alan Anderson"][:rebounds]] = game_hash[:home]
 puts sizes
 
 
+array = [1, 3, 6]
+puts array.max
+
