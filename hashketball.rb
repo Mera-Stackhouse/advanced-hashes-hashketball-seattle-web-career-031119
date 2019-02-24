@@ -179,6 +179,7 @@ def big_shoe_rebounds
   puts sizes
   largest = sizes.key(sizes.values.max)
   puts largest
+  game_hash[:home][:players]["Alan Anderson"][:rebounds]
 end
 
 big_shoe_rebounds
