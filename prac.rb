@@ -139,7 +139,7 @@ sizes = {}
 puts sizes
 puts x = game_hash[:home][:players]["Alan Anderson"][:rebounds]
 puts y = game_hash[:home][:players]["Alan Anderson"][:shoe]
-sizes[stats[:rebounds]] = stats[:shoe]
+sizes[x] = y
 puts sizes
 
 
