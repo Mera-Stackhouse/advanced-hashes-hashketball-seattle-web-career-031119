@@ -133,4 +133,10 @@ def good_practices
   end
 end
 
-good_practices
+#good_practices
+
+sizes = {}
+puts sizes
+
+
+sizes[stats[:rebounds]] = stats[:shoe]
