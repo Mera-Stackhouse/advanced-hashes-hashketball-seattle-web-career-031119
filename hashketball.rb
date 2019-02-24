@@ -167,6 +167,11 @@ def player_stats(name)
     game_hash[:away][:players][name]
   end
 end
+
+def big_shoe_rebounds
+  sizes = {}
+  game_hash[:home][:players].each {|name, stats|
+    sizes[stats[:shoe]] = 
   
 
 
