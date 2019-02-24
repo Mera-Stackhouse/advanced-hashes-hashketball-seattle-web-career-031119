@@ -160,4 +160,6 @@ def player_numbers(team_name)
   jerseys
 end
 
+puts player_numbers("Charlotte Hornets")
+
 
