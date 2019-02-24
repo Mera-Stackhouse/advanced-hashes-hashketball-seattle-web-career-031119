@@ -160,6 +160,13 @@ def player_numbers(team_name)
   jerseys
 end
 
-puts player_numbers("Charlotte Hornets")
+def player_stats(name)
+  if game_hash[:home][:players].has_key?(name)
+    game_hash[:home][:players][name]
+  else
+    game_hash[:away][:players][name]
+  end
+end
+  
 
 
