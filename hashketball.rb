@@ -144,7 +144,7 @@ end
 
 def team_names
   array = [ game_hash[:home][:team_name],  game_hash[:away][:team_name]]
-
+end
 
 
 
