@@ -174,7 +174,7 @@ def big_shoe_rebounds
     sizes << stats[:shoe]
   }
   game_hash[:away][:players].each {|name, stats|
-    sizes[stats[:rebounds]] = stats[:shoe]
+    sizes << stats[:shoe]
   }
   puts sizes
 end
