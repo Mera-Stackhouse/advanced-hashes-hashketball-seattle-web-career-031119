@@ -177,7 +177,7 @@ def big_shoe_rebounds
     sizes[name] = stats[:shoe]
   }
   largest = sizes.key(sizes.values.max)
-  puts game_hash[:home][:players][largest][:rebounds]
+  game_hash[:home][:players][largest][:rebounds]
 end
 
 
