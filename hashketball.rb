@@ -173,7 +173,6 @@ def big_shoe_rebounds
   game_hash[:home][:players].each {|name, stats|
     sizes[stats[:rebounds]] = stats[:shoe]
   }
-  
   game_hash[:away][:players].each {|name, stats|
     sizes[stats[:rebounds]] = stats[:shoe]
   }
