@@ -154,7 +154,7 @@ def player_numbers(team_name)
     }
   else
     game_hash[:away][:players].each {|player, number|
-      jerseys << number
+      jerseys << number[:number]
     }
   end
   jerseys
