@@ -1,4 +1,4 @@
-# Write your code here!
+require "pry"
 
 def game_hash
   game_hash = {
@@ -117,70 +117,32 @@ def game_hash
   }
 end
 
-
-def num_points_scored(name)
-  if game_hash[:home][:players].has_key?(name)
-    game_hash[:home][:players][name][:points]
-  else
-    game_hash[:away][:players][name][:points]
+def good_practices
+  game_hash.each do |location, team_data|
+    #are you ABSOLUTELY SURE what 'location' and 'team data' are? use binding.pry to find out!
+    binding.pry
+      team_data.each do |attribute, data|
+        #are you ABSOLUTELY SURE what 'attribute' and 'team data' are? use binding.pry to find out!
+        binding.pry
+ 
+        #what is 'data' at each loop through out .each block? when will the following line of code work and when will it break?
+        data.each do |data_item|
+            binding.pry
+      end
+    end
   end
 end
 
-def shoe_size(name)
-  if game_hash[:home][:players].has_key?(name)
-    game_hash[:home][:players][name][:shoe]
-  else
-    game_hash[:away][:players][name][:shoe]
-  end
-end
+#good_practices
 
-def team_colors(name)
-  if name == game_hash[:home][:team_name]
-    game_hash[:home][:colors]
-  else
-     game_hash[:away][:colors]
-  end
-end
-
-def team_names
-  array = [ game_hash[:home][:team_name],  game_hash[:away][:team_name]]
-end
-
-def player_numbers(team_name)
-  jerseys = []
-  if team_name == game_hash[:home][:team_name]
-    game_hash[:home][:players].each {|player, number|
-      jerseys << number[:number]
-    }
-  else
-    game_hash[:away][:players].each {|player, number|
-      jerseys << number[:number]
-    }
-  end
-  jerseys
-end
-
-def player_stats(name)
-  if game_hash[:home][:players].has_key?(name)
-    game_hash[:home][:players][name]
-  else
-    game_hash[:away][:players][name]
-  end
-end
-
-def big_shoe_rebounds
-  sizes = {}
-  game_hash[:home][:players].each {|name, stats|
-    sizes[name] = stats[:shoe]
-  }
-  game_hash[:away][:players].each {|name, stats|
-    sizes[name] = stats[:shoe]
-  }
-  largest = sizes.key(sizes.values.max)
-  game_hash[:home][:players][largest][:rebounds]
-end
+sizes = {}
+puts sizes
+puts x = game_hash[:home][:players]["Alan Anderson"][:rebounds]
+puts y = game_hash[:home][:players]["Alan Anderson"][:shoe]
+sizes[game_hash[:home][:players]["Alan Anderson"][:rebounds]] = game_hash[:home][:players]["Alan Anderson"][:shoe]
+puts sizes
 
 
-  
-
+array = [1, 3, 6]
+puts array.max
 
