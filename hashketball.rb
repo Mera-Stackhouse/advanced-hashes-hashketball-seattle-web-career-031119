@@ -146,5 +146,18 @@ def team_names
   array = [ game_hash[:home][:team_name],  game_hash[:away][:team_name]]
 end
 
+def player_numbers(team_name)
+  jerseys = []
+  if team_name == game_hash[:home][:team_name]
+    game_hash[:home][:players].each {|player, number|
+      jerseys << number
+    }
+  else
+    game_hash[:away][:players].each {|player, number|
+      jerseys << number
+    }
+  end
+  jerseys
+end
 
 
